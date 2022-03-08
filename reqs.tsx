@@ -1,17 +1,12 @@
 document.getElementById("upBtn").innerHTML = "Up Button";
-
-let req = new XMLHttpRequest();
-let resp = "No request yet!";
-
-const url='cerulity32k.github.io';
-req.open("GET", url);
-req.send();
-
-req.onreadystatechange = (e) => {
-    resp = "Request suceeded!";//req.responseText;
-}
+let url = "";
 
 function up() {
-    //document.getElementById("upBtn").innerHTML = resp + "REQUEST HAS SUCCEEDED";
-    document.getElementById("upBtn").innerHTML = resp;
+    let req = new XMLHttpRequest();
+    req.open("POST", url + "?code=up");
+    req.send();
+}
+
+function updateurl() {
+    url = document.getElementById("urlBox").innerHTML;
 }
