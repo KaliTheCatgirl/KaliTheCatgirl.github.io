@@ -6,9 +6,10 @@ req.open("GET", url);
 req.send();
 
 req.onreadystatechange = (e) => {
-    resp = req.responseText;
+    resp = "Request suceeded!";//req.responseText;
 }
 
 function up() {
+    //document.getElementById("upBtn").innerHTML = resp + "REQUEST HAS SUCCEEDED";
     document.getElementById("upBtn").innerHTML = resp;
 }
