@@ -1,3 +1,5 @@
+document.getElementById("upBtn").innerHTML = "Up Button";
+
 let req = new XMLHttpRequest();
 let resp = "No request yet!";
 
