@@ -1,4 +1,4 @@
-document.getElementById("upBtn").innerHTML = "Up Button";
+document.getElementById("scriptWorks").innerHTML = "Script loaded and working!";
 let url = "";
 
 function up() {
