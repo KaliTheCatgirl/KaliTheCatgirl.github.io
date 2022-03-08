@@ -12,7 +12,7 @@ const PlaceDown = 11;
 const Select = 12;
 let url = "";
 
-async function get(url: string = '', data: {} = {}) {
+async function get(url = '', data = {}) {
 	const response = await fetch(url, {
 		cache: 'no-cache',
 		headers: {
