@@ -12,10 +12,6 @@ const PlaceDown = 11;
 const Select = 12;
 let url = "";
 
-function load() {
-	document.getElementById("scriptWorks").innerHTML = "Script loaded and working!";
-}
-
 async function get(url: string = '', data: {} = {}) {
 	const response = await fetch(url, {
 		cache: 'no-cache',
