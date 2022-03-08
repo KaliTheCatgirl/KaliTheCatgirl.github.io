@@ -1,5 +1,5 @@
 let req = new XMLHttpRequest();
-let resp = "No request yet!"
+let resp = "No request yet!";
 
 const url='cerulity32k.github.io';
 req.open("GET", url);
