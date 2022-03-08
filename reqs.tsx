@@ -10,8 +10,11 @@ const Place = 9;
 const PlaceUp = 10;
 const PlaceDown = 11;
 const Select = 12;
-document.getElementById("scriptWorks").innerHTML = "Script loaded and working!";
 let url = "";
+
+function load() {
+	document.getElementById("scriptWorks").innerHTML = "Script loaded and working!";
+}
 
 async function get(url: string = '', data: {} = {}) {
 	const response = await fetch(url, {
