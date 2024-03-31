@@ -6,6 +6,12 @@
 @font-face {
     font-family: 'jbm';
     src: url('JetBrainsMono.woff2');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'jbm';
+    src: url('JetBrainsMonoXBold.ttf');
+    font-weight: bold;
 }
 
 body {
