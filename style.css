@@ -1,114 +1,161 @@
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url("fonts/JetBrainsMono-Regular.woff2");
-    font-weight: normal;
+:root {
+    --gaysep: 0.05;
 }
 
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url("fonts/JetBrainsMono-Bold.woff2");
-    font-weight: bold;
+html[class="debug"] * {
+    /* border: 1px solid red !important; */
+    background-color: #00f1 !important;
 }
 
 body {
-    font-family: "JetBrains Mono";
-    background: rgb(25, 0, 50);
-    color: white;
+    font-family: sans-serif;
+    /* background-color: #dfe; */
+    /* color: white; */
 }
 
-.codeline {
-    background-color: #00000040;
-    padding: 5px;
-    border-radius: 5px;
+@keyframes cool-ass-animation {
+    from { transform: scale(0%) rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+    to { }
+}
+@keyframes weeee {
+    from {
+        opacity: 0%;
+        transform: rotateY(720deg);
+    }
+    to {
+        opacity: 100%;
+        transform: rotateY(0);
+    }
+}
+@keyframes convenient {
+    from { transform: scale(0%) rotateX(360deg) rotateY(720deg) rotateZ(360deg); }
+    to { }
 }
 
-@keyframes reposition {
-    0% {position:absolute}
-}
-
-.screen-center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-.center {
+html, body {
     display: flex;
+    margin: 0 0;
+    text-shadow: 2px 2px 2px #0004;
+}
+p {
+    margin: 0.5rem;
+}
+
+.evil {
+    color: red;
+}
+
+.song {
+    width: 100%;
+}
+.song-title {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.25rem 0;
+}
+.song-arrangement {
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+audio {
+    width: 90%;
+}
+
+.cool-ass {
+    animation: forwards 2s cool-ass-animation;
+}
+.spinny {
+    animation: forwards 3s weeee;
+}
+.convenient {
+    animation: infinite 2s convenient;
+}
+
+.big {
+    font-size: 4rem;
+}
+.medium {
+    font-size: 2rem;
+}
+.centered {
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
-.center-text {
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.gay {
+    text-shadow:
+        calc(1em  * var(--gaysep))  calc(1em  * var(--gaysep)) 0px #f00,
+        calc(2em  * var(--gaysep))  calc(2em  * var(--gaysep)) 0px #f80,
+        calc(3em  * var(--gaysep))  calc(3em  * var(--gaysep)) 0px #ff0,
+        calc(4em  * var(--gaysep))  calc(4em  * var(--gaysep)) 0px #8f0,
+        calc(5em  * var(--gaysep))  calc(5em  * var(--gaysep)) 0px #0f0,
+        calc(6em  * var(--gaysep))  calc(6em  * var(--gaysep)) 0px #0f8,
+        calc(7em  * var(--gaysep))  calc(7em  * var(--gaysep)) 0px #0ff,
+        calc(8em  * var(--gaysep))  calc(8em  * var(--gaysep)) 0px #08f,
+        calc(9em  * var(--gaysep))  calc(9em  * var(--gaysep)) 0px #00f,
+        calc(10em * var(--gaysep))  calc(10em * var(--gaysep)) 0px #80f,
+        calc(11em * var(--gaysep))  calc(11em * var(--gaysep)) 0px #f0f,
+        calc(12em * var(--gaysep))  calc(12em * var(--gaysep)) 0px #f08,
+        calc(13em * var(--gaysep))  calc(13em * var(--gaysep)) 0px #f00;
+}
+
+.remember-youre {
+    text-shadow:
+        0 0 0.5em var(--remembered),
+        0 0 0.5em var(--remembered),
+        0 0 0.5em var(--remembered),
+        0 0 0.5em var(--remembered),
+        0 0 0.5em var(--remembered),
+        0 0 0.5em var(--remembered);
+}
+
+.image-container {
+    margin: 0.25rem;
+    border: 5px solid #dbf;
+    background: #edf;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.image-container img {
+    width: var(--w);
+    margin: 0.25rem;
+    border: 1px solid black;
+}
+
+.image-container * {
+    /* max-width: var(--w); */
+    overflow-wrap: anywhere;
+}
+
+.music-section {
+    margin: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.name {
-    margin: 0;
-    font-size: 500%;
+.bordered {
+    border: 1px solid black;
 }
 
-.logo {
-    z-index: 2;
-}
-
-.container {
-    width: 80%;
-    margin: 25px auto;
-    padding: 20px 5%;
-    border: 2px solid white;
-    background-image: linear-gradient(150deg, rgb(50, 0, 50), rgb(100, 0, 50));
-}
-
-.overlay {
-    background-color:black;
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    z-index: 1;
-    pointer-events: none;
-}
-
-table {
-    column-count: auto;
-}
-
-.box {
-    border: 1px solid white;
-}
-
-hr {
-    color: #ffffff40;
-}
-
-.skillhead {
-    margin: 10px auto;
-}
-
-.skillbody {
-    margin: 10px;
-}
-
-a {
-    color: rgb(255, 128, 204);
-}
-
-a:visited {
-    color: rgb(176, 49, 214);
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-}
-
-.grid-3 > * {
-    border: 1px solid white;
-    margin: 0px;
-    padding: 1em;
+details {
+    max-width: fit-content;
+    border: 5px solid #8048;
+    background-color: #80f1;
+    padding: 10px;
 }

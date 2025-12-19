@@ -1,189 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+    TODO:
+    - LESS DIV SOUP!!!!
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kali the Catgirl</title>
-    <!-- <script>window.MathJax = { startup: { typeset: false, } }; </script> -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-        integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" crossorigin="anonymous"
-        onload="render_math()"></script> -->
-    <script defer src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-    <!-- <script>function render_math() { console.log(MathJax.typeset([...document.querySelectorAll(".math")])) } </script> -->
-    <script src="script.js"></script>
-    <script src="logoanim.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="logoanim()">
-    <!-- <div class="overlay" id="intro-blocker"></div> -->
-
-    <section class="container">
-        <div style="height: 100px" class="center" id="logo-slot">
-            <svg id="logo" viewBox="-1 0 12 10" class="logo" style="height: 100px;">
-                <line id="logo-k-upright" x1="11" x2="5" y1="-1" y2="5" stroke="#f8c" stroke-width="1"></line>
-                <line id="logo-k-downright" x1="11" x2="5" y1="11" y2="5" stroke="#f8c" stroke-width="1"></line>
-                <line id="logo-centerline" x1="5" x2="5" y1="0" y2="10" stroke="#f8c" stroke-width="1"></line>
-                <path id="logo-curve" d="M 0 0.5 A 4 4 0 0 1 0 9.5" stroke="#f8c" stroke-width="1" fill="none"></path>
-                <line id="logo-left-line" x1="0" x2="5" y1="5" y2="5" stroke="#f8c" stroke-width="1"></line>
-                <line id="logo-baseline" x1="0" x2="9.5" y1="9.5" y2="9.5" stroke="#f8c" stroke-width="1"></line>
+<body class="column" style="padding: 1rem">
+    <header class="centered column">
+        <div style="display: flex; align-items: center;">
+            <svg viewBox="-1 0 12 10" style="width: 100px">
+                <line id="logo-k-upright" x1="11" x2="5" y1="-1" y2="5" stroke="#628" stroke-width="1"></line>
+                <line id="logo-k-downright" x1="11" x2="5" y1="11" y2="5" stroke="#628" stroke-width="1"></line>
+                <line id="logo-centerline" x1="5" x2="5" y1="0" y2="10" stroke="#628" stroke-width="1"></line>
+                <path id="logo-curve" d="M 0 0.5 A 4 4 0 0 1 0 9.5" stroke="#628" stroke-width="1" fill="none"></path>
+                <line id="logo-left-line" x1="0" x2="5" y1="5" y2="5" stroke="#628" stroke-width="1"></line>
+                <line id="logo-baseline" x1="0" x2="9.5" y1="9.5" y2="9.5" stroke="#628" stroke-width="1"></line>
             </svg>
+            <img src="cool_ass_name.gif" width="498" height="105" class="cool-ass">
+            <span style="font-size: 5rem;">'s</span>
+            <h1 class="big spinny gay">WEBSITE!!!</h1>
         </div>
-        <h1 class="center" style="font-size: 250%; margin: 5pt;" id="name">Kali the Catgirl</h1>
-        <p class="center">A Canadian software engineering student who enjoys programming, music, math, precision
-            platformers, and factory games! </p>
-    </section>
-    <section class="container center-text">
-        <h1 class="center" style="font-size: 200%;">Things I Like</h1>
-        <grid class="grid-3">
-            <h2>Cats</h2>
-            <h2>Rust</h2>
-            <h2>JetBrains Mono</h2>
-            <h2>Vulkan</h2>
-            <h2><span style="color: #ff80cc">#FF80CC</span></h2>
-            <h2>RISC-V</h2>
-            <h2>x86_64</h2>
-            <h2>Atomics</h2>
-            <h2>SIMD</h2>
-            <h2>LLVM</h2>
-            <h2>ELF</h2>
-            <h2>Vorbis</h2>
-            <h2>FLAC</h2>
-            <h2>Furnace Tracker</h2>
-            <h2>Yamaha YM chips</h2>
-            <h2>ESFM</h2>
-            <h2>C64 SID</h2>
-            <h2>KDE Plasma</h2>
-            <h2>Celeste</h2>
-            <h2>Factorio</h2>
-            <h2>Zachtronics</h2>
-        </grid>
-    </section>
-    <section class="container center-text">
-        <h1 class="center" style="font-size: 200%;">Languages and Usages</h1><br>
+        <p>created by an unfathomably silly systems language user</p>
+        <p>human, i remember you're <span class="remember-youre" style="--remembered: red;">work in progresses</span></p>
+        <nav style="font-size: 2rem;">
+            <a class="boxed" href="#noises">music</a>
+            <a class="boxed" href="#sillies">gallery</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noises">
+            <h1 class="big centered gay">noises</h1>
+            <p class="centered">my music</p>
+            <div class="row">
+                <div class="bordered music-section">
+                    <h2 class="medium gay">
+                        inserter series
+                    </h2>
+                    <p>inspired by factorio</p>
+                    <div class="song">
+                        <h4 class="song-title"><code>Burner Inserter</code></h4>
+                        <p>this one was made in lmms lmao</p>
+                        <audio preload="none" controls src="music/insert/burner.flac"></audio>
+                    </div>
+                    <div class="song">
+                        <h4 class="song-title"><code>Stack Inserter (2A03 + Amiga)</code></h4>
+                        <audio preload="none" controls src="music/insert/stack.flac"></audio>
+                    </div>
+                    <div class="song">
+                        <h4 class="song-title"><code>Inserter (2x SID2)</code></h4>
+                        <audio preload="none" controls src="music/insert/inserter.flac"></audio>
+                    </div>
+                    <div class="song">
+                        <h4 class="song-title"><code>Fast Inserter (SNES)</code></h4>
+                        <audio preload="none" controls src="music/insert/fast.flac"></audio>
+                    </div>
+                </div>
 
-        <details>
-            <summary>A list of languages I have used, as well as how I have used them so far. </summary><br>
-            <section class="box">
-                <h2 class="skillhead">Rust</h2>
-                <p class="skillbody">My main language. I have created many things with Rust, including a basic bytecode
-                    compiler and runtime for a custom scripting language, a bytebeat mini language, runner, and
-                    visualiser (explained in the Bytebeat section), a specialised Vulkan-based renderer (with an
-                    included system for VGA text mode-like graphics), an asynchronous communication application between
-                    a web client and a Minecraft turtle, a basic factory game system, multiple half-finished
-                    recreations of the game <em>Just Shapes and Beats</em>, a cellular automata Margolus ruleset
-                    executor, an indexer and labeller for <em>Geometry Dash</em> music that is not regularly available,
-                    an image pixel sorter, a reverse engineering framework, a joint web/game/chat server, a clickbot
-                    audio synthesizer, a Windows implementation of `/dev/audio`, an image corruptor, an NES ROM
-                    corruptor, a university grade calculator, and many more tiny or unfinished miscellaneous projects. </p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">C#</h2>
-                <p class="skillbody">Miscellaneous projects, my main language before I learnt Rust. This is what I used
-                    to create the first version of the data collection app for our high school robotics team, using
-                    Xamarin (the Dart section will go into detail about this). I also used C# to create games, though
-                    most were never truly finished. The unfinished games include a Celeste-inspired platformer where
-                    platforms are only active when lit, and a recreation of Fruit Ninja. One small game I have finished
-                    is a recreation of an excerpt of the final part of Limbo, a level in the game <em>Geometry
-                        Dash</em>.</p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">Dart</h2>
-                <p class="skillbody">I learned Dart for our high school robotics team, the year after the C#/Xamarim app
-                    was created. As competitions restricted the use of wireless communication, I created a specialised
-                    application using Dart and Flutter to track data for each match, serialising data into QR codes
-                    which were scannable into a Google spreadsheet. This application replaced the paper-based approach
-                    that the team had done in previous years, and massively enhanced the accuracy and ergonomics of the
-                    collected data.</p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">Python</h2>
-                <p class="skillbody">I most commonly use Python for extremely high-level purposes. For productive
-                    use, I have used it in a university assignment to create data plots and perform calculations with
-                    uncertainties, and for my work I have used it to automate what would've been a gruelling task:
-                    downloading over one thousand articles in the form of web pages from an old information base,
-                    updating their content to achieve a look fitted better for the company, and reuploading them to a
-                    modernised hosting service. Not only did the program meet the requirements, I created a web page to
-                    generate content to create a much more functional layout than what was possible in the editor, which
-                    included a generator for a paragraph with an icon vertically centered next to it, as well as
-                    flexible headers that expanded to fill the width of the article, forming a flexible layout, and as
-                    it replaced PNG images, the size of the documents were massively cut down. I am roughly familiar with
-                    many common Python libraries, like Beautiful Soup, matplotlib and numpy. </p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">HTML, CSS, and JavaScript</h2>
-                <p class="skillbody">These three are roped together due to their interlinkage; the only independent
-                    usage I have of these languages is JavaScript, which I have used to modify behaviour in the game
-                    <em>Mindustry</em>. Otherwise, all three have been a factor in developing my website. Front-end
-                    development is not my strong suit, and I have never had any experience with frameworks like React,
-                    Angular, Vue, Svelte, etc., as I prefer to create websites with raw HTML, CSS, and JS. Sass and
-                    TypeScript are as far as I have gone regarding preprocessors. I have made a few creations, notably
-                    small web pages created for work, as they can be shared between computers without the need for any
-                    installation. I have also implemented affine transformations in JavaScript and have used them to
-                    create many interesting things out of raw HTML elements, such as a spinning donut using only span
-                    elements and the CSS `translate` property. Other than that, I have pretty basic experience.
-                </p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">Latex & Typst</h2>
-                <p class="skillbody">I am familiar with both typesetting languages, and have used them for university
-                    lab reports. The uses of these are much more specific to school, though I am working on an article
-                    in Typst that debunks the common saying that computers cannot generate truly random numbers.</p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">C++</h2>
-                <p class="skillbody">I am very familiar with C++ and understand many concepts of the language, but I
-                    oftentimes prefer other languages. My most fruitful creations using C++ are mostly wrappers over C
-                    APIs, such as OpenGL. My other creations are mostly formatted like C, but using a few C++ features
-                    to make development more ergonomic. Many projects end up being recreated in other languages, notably
-                    Rust. I have created an application that uses OpenGL and Dear ImGui to create a simple vertex shader
-                    editor for dataless point primitives.</p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">C</h2>
-                <p class="skillbody">I most commonly use C for bytebeat kernels, operating system development, or for
-                    fiddling around with very low-level APIs, such as XLib, WinAPI, or the POSIX API. When these
-                    projects grow from small experiments to sustained projects, more often than not they will turn into
-                    C++ projects due to the comparative ease of abstraction.</p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">CUDA</h2>
-                <p class="skillbody">I usually use CUDA for graphical applications, such as Nonane, my program that uses
-                    WinGDI and CUDA to iteratively apply various fun effects to the screen using a simple
-                    double-buffering system. Since CUDA is proprietary to NVIDIA processors however, I prefer to use
-                    open-source APIs, such as Vulkan, which I am in the process of learning.</p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">Lua</h2>
-                <p class="skillbody">I mostly use Lua for modding, most notably for Factorio mods. I haven't produced
-                    anything worth much, but I have become familiar with the language. I have passively used Lua while
-                    experimenting with turtles and computers in <em>ComputerCraft: Tweaked</em>and
-                    <em>OpenComputers</em>, both of which are Minecraft mods that add Lua-based computers.
-                </p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">TypeScript</h2>
-                <p class="skillbody">I have used TypeScript for a few small projects, including a program that allows
-                    communication between Minecraft turtles (see the Lua section). It is also my preferred language when
-                    developing websites, as I enjoy strong type systems.</p>
-            </section><br>
-            <section class="box">
-                <h2 class="skillhead">Bytebeat</h2>
-                <p class="skillbody">I have mentioned bytebeat multiple times, so I will describe it here. Bytebeat is
-                    the generation of audio through pure functions instead of through more complex music production methods. I
-                    have experimented with bytebeat formulas, but one script I am the most proud of (which, as with many bytebeat formulas,
-                    contains <b>high volume</b>and <b>extremely coarse sounds</b>) can be found <a href="https://dollchan.net/bytebeat/#4AACAO0dtj7sOgzAMRefmK7wUJdSIODwCEvAjKN2K2qEvYODza5LSdqg8WNf35tiZ07ZEcb2PjzO00FsssUbS3HIkg1Q6FMN4ek6rK3YaNWZcoRf4nRRcGSYG/4UsWm9vIfGmMnSGGEwcS7+kl3PXESmIQC80OEiBjEIhZXnKWfgUm5KaplY88IeHV1rBHioHCXiZeQkHqFTADYOCI5PqQJJz3PP/cLrcfF7hqsyPJredE+nFukCxjPnwXg">here</a>.
-                    While it is not a language itself, projects such as the SthephanShi's bytebeat editor and
-                    imageboard, viznut's IBNIZ, and a couple of my own projects are centered around the production and visualisation of
-                    bytebeat. </p>
-            </section>
-        </details>
-    </section>
-    <!-- <section class="container center-text">
-        <h1 class="center" style="font-size: 200%;">Blog</h1>
-        <p>My blog can be found <a href="/blog/index.html">here</a>. I post about a bunch of miscellaneous things.</p>
-    </section> -->
+                <div class="bordered music-section">
+                    <h2 class="medium gay">
+                        bytebeat sampling
+                    </h2>
+                    <p>turning noise into more noise</p>
+                    <div class="song">
+                        <h4 class="song-title">INSERTION ASSERTION</h4>
+                        <p>title comes from the fact that motifs from the inserter series are included</p>
+                        <audio preload="none" controls src="music/bb/assert.flac"></audio>
+                    </div>
+                    <div class="song">
+                        <h4 class="song-title">X86C0R14T3R</h4>
+                        <p>title is a mutilated version of x86 + excoriate</p>
+                        <p style="font-family: monospace; font-size: 1rem;"><code>XMM</code> arrangement</p>
+                        <audio preload="none" controls src="music/bb/x86_xmm.flac"></audio>
+                        <p style="font-family: monospace; font-size: 1rem;"><code>FMA</code> arrangement</p>
+                        <audio preload="none" controls loop src="music/bb/x86_fma.flac"></audio>
+                    </div>
+                </div>
+
+                <div class="bordered music-section">
+                    <h2 class="medium gay">
+                        misc. (waveform/vital)
+                    </h2>
+                    <p>superslop is my favourite instrument</p>
+                    <div class="song">
+                        <h4 class="song-title">core::mem::forget</h4>
+                        <p>alive, forgotten. conscious, forbidden to interact.</p>
+                        <p>partially inspired by mindustry</p>
+                        <p>
+                            this one ive had the idea for for a long time (especially the pings),
+                            but i never really got around to implementing it until very recently.
+                            it wasnt until i was shattering an amen break in strudel that i realised i could turn it into an actual song
+                        </p>
+                        <audio preload="none" controls src="music/waveform/forget.flac"></audio>
+                        <p>final part (really like listening to it isolated)</p>
+                        <audio preload="none" controls src="music/waveform/the 3.flac"></audio>
+                        <p>isolated sidechained break</p>
+                        <audio preload="none" controls src="music/waveform/the amens breaks.flac"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="bordered music-section">
+                    <h2 class="medium gay">
+                        misc. (furnace)
+                    </h2>
+                    <p>mostly remixes, like all chiptuners tend to</p>
+                    <div class="song">
+                        <h4 class="song-title">Vito Biliti - Spin Land (2A03 Cover) [Super Stickman Golf 3]</h4>
+                        <p>ssg3 anyone?</p>
+                        <audio preload="none" controls src="music/furnace/spin land.flac"></audio>
+                    </div>
+                    <div class="song">
+                        <h4 class="song-title">Douglas Holmquist - Checkpoint 11 (PC + ES1488 Cover) [Smash Hit]</h4>
+                        <p>smash hit was such a peak mobile game</p>
+                        <audio preload="none" controls src="music/furnace/smcp11.flac"></audio>
+                    </div>
+                    <div class="song">
+                        <h4 class="song-title">Matthew E. Harwood - PDA 1 (SID3 Cover) [Battleblock Theater/Alien Hominid]</h4>
+                        <p>heard this one in battleblock theater</p>
+                        <audio preload="none" controls src="music/furnace/pda r2.flac"></audio>
+                    </div>
+                    <div class="song">
+                        <h4 class="song-title">Kenta Nagata, Satomi Terui - Neo Bowser City (PC + ES1488 Cover) [Mario Kart 7]</h4>
+                        <p>nintendo pretty please dont kill me with knives and hammers</p>
+                        <audio preload="none" controls src="music/furnace/nbc.flac"></audio>
+                    </div>
+                    <div>
+                        <h4 class="song-title">Kali the Catgirl - Buffer Overrun (ES5506 + ES1488 Cover)</h4>
+                        <p>yes i did make a cover of my own song, and theres nothing you can do about it :3</p>
+                        <audio preload="none" controls src="music/furnace/buffer overrun.flac"></audio>
+                    </div>
+                </div>
+
+                <div class="bordered centered" style="flex: 2">
+                    <h2 class="medium gay">
+                        evil lmms concoctions
+                    </h2>
+                    <p>INCREDIBLE slop next 5km</p>
+                    <p>these are very old, ive completely abandoned lmms for waveform and furnace at this point</p>
+                    <p class="evil">most of these are pretty loud so be warned of that, <strong>loud ones are red</strong></p>
+
+                    <div class="row">
+                        <div class="music-section">
+
+                            <h3 class="gay">phonk remixes</h3>
+                            <p>these kinda sound semi-decent but WOW i regret these so badly</p>
+                            <div class="song">
+                                <h4 class="evil song-title">DJ-Nate - Clubstep</h4>
+                                <p>helium type vocals</p>
+                                <audio preload="none" controls src="music/evil/phonk/Clubstep Phonk Final 1.flac"></audio>
+                            </div>
+                            <div class="song">
+                                <h4 class="evil song-title">F-777 - Deadlocked</h4>
+                                <audio preload="none" controls src="music/evil/phonk/deadlocked phonk.flac"></audio>
+                            </div>
+                            <div class="song">
+                                <h4 class="evil song-title">Zalza - Cherish</h4>
+                                <audio preload="none" controls src="music/evil/phonk/cherish phonk 5.flac"></audio>
+                            </div>
+
+                            <h3 class="gay">fakebit remixes i used to call chiptune</h3>
+                            <p>
+                                &gt; "chiptune remix"<br>
+                                &gt; look inside<br>
+                                &gt; tripleoscillator
+                            </p>
+                            <p>i have SO MANY OF THESE, these are ones i actually kinda like</p>
+                            <div class="song">
+                                <h4 class="song-title">Murugan Thiruchelvam - Kitchen [I Am Bread]</h4>
+                                <audio preload="none" controls src="music/evil/fakebit/i am bread kitchen chiptune.flac"></audio>
+                            </div>
+                            <div class="song">
+                                <h4 class="evil song-title">Tanger - BIKE</h4>
+                                <audio preload="none" controls src="music/evil/fakebit/bike chip revise add porta.flac"></audio>
+                            </div>
+                            <div class="song">
+                                <h4 class="song-title">vowl & sace - 2000</h4>
+                                <p>this one was made because i really liked the song, but wanted to change its structure</p>
+                                <audio preload="none" controls src="music/evil/fakebit/2000 chip.flac"></audio>
+                            </div>
+                        </div>
+
+                        <div class="music-section">
+                            <h3 class="gay">other remixes</h3>
+                            <p>literally just loud = good mostly</p>
+                            <div class="song">
+                                <h4 class="evil song-title">Zalza - Cherish</h4>
+                                <p>i de-phonked the phonk remix of this one and made it into something kinda decent i think?</p>
+                                <audio preload="none" controls src="music/evil/other remixes/cherish penis remix.flac"></audio>
+                            </div>
+                            <div class="song">
+                                <h4 class="evil song-title">Shirobon - Granite</h4>
+                                <audio preload="none" controls src="music/evil/other remixes/feldspar.flac"></audio>
+                            </div>
+                            <div class="song">
+                                <h4 class="song-title">Bee Hunter - Apoplexy (Noteblock Remix)</h4>
+                                <audio preload="none" controls src="music/evil/other remixes/apoplexy noteblocks.flac"></audio>
+                            </div>
+
+                            <h3 class="gay">unfinished originals</h3>
+                            <p>might continue later idk</p>
+                            <div class="song">
+                                <h4 class="evil song-title">C18H24O2</h4>
+                                <p>made after seeing bishu's hit 'em video, i wanted to make what i think was a more faithful interpretation of hit 'em's description</p>
+                                <p>ty dream girl</p>
+                                <audio preload="none" controls src="music/evil/originals/c18h24o2.flac"></audio>
+                            </div>
+                            <div class="song">
+                                <h4 class="song-title">Misinformation Break</h4>
+                                <p>the "how it feels to spread misinformation" meme got to me and now i some day want to make a song about it that's utterly joyous</p>
+                                <audio preload="none" controls src="music/evil/originals/misinformation break.flac"></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sillies">
+            <h1 class="big centered gay">sillies</h1>
+            <p class="centered">welcome to my louvre</p>
+            <div style="display: flex; flex-wrap: wrap">
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/bptpbtpbtbptpbt.gif">
+                    <div>me to the people that made vulkan (ty for the peak)</div>
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/does this.gif">
+                    <div>:3</div>
+                </span>
+                <span class="image-container" style="--w: 5in">
+                    <img loading="lazy" src="images and gifs/dry out geomety dash.gif">
+                    <div>accurate depiction of my canadian fuckass after it snows</div>
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/scare y.gif" style="background-color: black;">
+                    <div>shat myself after seeing this</div>
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/im in shark.gif">
+                    <div>im in shark</div>
+                </span>
+                <span class="image-container" style="--w: 2in">
+                    <img loading="lazy" src="images and gifs/javascrapt.gif">
+                    <div>whenever i have to use anything but a systems language to make something</div>
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/kibbycam.gif" style="background-color: black">
+                    <div>for some reason the completely black pixels in this gif are transparent which is perplexing beyond belief</div>
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/av2 is in a week.gif">
+                    <div>Can you believe it guys? AV2, just a week away. AV2 is in a week! (2025-12-17)</div>
+                </span>
+                <span class="image-container" style="--w: 2in">
+                    <img loading="lazy" src="images and gifs/penis.avif" style="background-color: black">
+                    <div>zmuhiouhokgfxhuolxfkokmqwonyngiybweygugfdoyimdfcbohijgovvgblblpiblhcggncdxngcdgeewiiyugwicixcgyivvfqxdxqtfwwrtdeeyqpupyiopbvgxvcxfvbvxxmfdjjgfgdssgfdyowoyqtepetrpuihgpbvnciuohcvbnreegfhwfewerfcrwentcn</div>
+                </span>
+                <span class="image-container" style="--w: 5in">
+                    <img loading="lazy" src="images and gifs/bgug.gif">
+                    <div>gug</div>
+                </span>
+                <span class="image-container" style="--w: 4in">
+                    <img loading="lazy" src="images and gifs/yeah.gif" style="background-color: black">
+                    <div>when i the me i when and me</div>
+                </span>
+                <span class="image-container" style="--w: 4in">
+                    <img loading="lazy" src="images and gifs/anything but that.gif" style="background-color: black">
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <div>What a conundrum! A need has arisen for a semantically represented textual paragraph! How ever will I satiate this specification?</div>
+                    <div>Hyper Text Markup Language:</div>
+                    <img class="convenient" src="images and gifs/convenient p.jpg" style="background-color: black">
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/girlkisser.gif" style="background-color: black">
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/eated cable.gif" style="background-color: black">
+                    <div>me when i see a fiber optic cable &lt;3</div>
+                </span>
+                <span class="image-container" style="--w: 2in">
+                    <img loading="lazy" src="images and gifs/owo bug.gif" style="background-color: black">
+                    owo
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/yuri-yuri-expert.gif" style="background-color: black">
+                    <div>what about my e?</div>
+                </span>
+                <span class="image-container" style="--w: 2in">
+                    <img loading="lazy" src="images and gifs/fast-missile-cat.gif" style="background-color: black">
+                    t
+                </span>
+                <span class="image-container" style="--w: 4in">
+                    <img loading="lazy" src="images and gifs/bunny-too-cute.gif" style="background-color: black">
+                </span>
+                <span class="image-container" style="--w: 3in">
+                    <img loading="lazy" src="images and gifs/noelle-deltarune-deltarune.gif" style="background-color: black">
+                    my runes be delting
+                </span>
+                <span class="image-container" style="--w: 4in">
+                    <img loading="lazy" src="images and gifs/mario-drooling-emoji.gif" style="background-color: black">
+                    guh
+                </span>
+            </div>
+        </section>
+
+        <section></section>
+    </main>
 </body>
 
 </html>
