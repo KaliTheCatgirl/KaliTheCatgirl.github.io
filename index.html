@@ -2,6 +2,17 @@
 <html lang="en">
 
 <!--
+    what're you doing here? peeking at the awfulness, i see
+    you probably arent gonna find anything useful here unfortunately
+
+    all original work made by Kali the Catgirl
+    code licensed under MIT
+    audiovisual and literary content licensed under CC-BY
+    use my stuff however you want, just credit me :P
+    no machine learning was used in the production of any music or website content
+-->
+
+<!--
     TODO:
     - LESS DIV SOUP!!!!
 -->
@@ -13,7 +24,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="column" style="padding: 1rem">
+<body class="column" style="padding: 1rem" onpageshow="{
+    const quotes = [
+        'AV2 IS OUT!!!',
+        'why do they call it const when you co nst the members of out mutable reassign the members?',
+        'I LOVE AOT I LOVE AOT I LOVE AOT I LOVE AOT I LOVE AOT!!!!!!!!!!',
+        'simplicity is multifaceted and dynamism is a facade. static typing is the only viable system.',
+        'c++ is simultaneously my second most favourite and second least favourite language. rust will always be above it, js will always be below it.',
+        'i love wasm \x22oh so you like javascript?\x22 theobromine those are two entirely separate technologies...',
+        'waving my tables rn',
+    ];
+    function randomise_quote() {
+        console.log(Math.random() * quotes.length);
+        random_quote.innerText = '&#x2684: ' + quotes[Math.floor(Math.random() * quotes.length)];
+    }
+    randomise_quote();
+}">
     <header class="centered column">
         <div style="display: flex; align-items: center;">
             <svg viewBox="-1 0 12 10" style="width: 100px">
@@ -38,8 +64,8 @@
             <div>&larr; me</div>
                 <!-- onmouseup="this.setAttribute('src', 'graphics/ehhe.png')" -->
         </div>
-        <p>created by an unfathomably silly systems language user</p>
-        <p>human, i remember you're <span class="remember-youre" style="--remembered: red;">work in progresses</span></p>
+        <p>created by an unfathomably silly systems language girlie</p>
+        <p id="random_quote">&#x2684;</p>
         <nav style="font-size: 2rem;">
             <h1 style="margin: 0">places</h1>
             <!-- <a class="boxed" href="#stuff">stuff</a> -->
@@ -64,6 +90,7 @@
         <section id="noises">
             <h1 class="big centered gay">noises <img src="graphics/avif/dj-khaled-dance.avif" style="height: 2em; translate: 0 1em;"></h1>
             <p class="centered">my music</p>
+            <p class="proud centered">green = songs im most proud of</p>
             <div class="row">
                 <div class="bordered music-section">
                     <h2 class="medium gay">
@@ -80,7 +107,7 @@
                         <audio preload="none" controls src="music/insert/stack.flac"></audio>
                     </div>
                     <div class="song">
-                        <h4 class="song-title"><code>Inserter (2x SID2)</code></h4>
+                        <h4 class="proud song-title"><code>Inserter (2x SID2)</code></h4>
                         <audio preload="none" controls src="music/insert/inserter.flac"></audio>
                     </div>
                     <div class="song">
@@ -100,7 +127,7 @@
                         <audio preload="none" controls src="music/bb/assert.flac"></audio>
                     </div>
                     <div class="song">
-                        <h4 class="song-title">X86C0R14T3R</h4>
+                        <h4 class="proud song-title">X86C0R14T3R</h4>
                         <p>title is a mutilated version of x86 + excoriate</p>
                         <p style="font-family: monospace; font-size: 1rem;"><code>SSE</code> arrangement</p>
                         <audio preload="none" controls src="music/bb/x86_xmm.flac"></audio>
@@ -115,7 +142,7 @@
                     </h2>
                     <p>superslop is my favourite instrument</p>
                     <div class="song">
-                        <h4 class="song-title">core::mem::forget</h4>
+                        <h4 class="proud song-title">core::mem::forget</h4>
                         <p>alive, forgotten. conscious, forbidden to interact.</p>
                         <p>partially inspired by mindustry</p>
                         <p>
@@ -124,14 +151,14 @@
                             it wasnt until i was shattering an amen break in strudel that i realised i could turn it into an actual song
                         </p>
                         <audio preload="none" controls src="music/waveform/forget 2.1.flac"></audio>
-                        <p>older revision</p>
-                        <audio preload="none" controls src="music/waveform/forget.flac"></audio>
                         <p>final part (really like listening to it isolated)</p>
                         <audio preload="none" controls src="music/waveform/forever 2.1.flac"></audio>
-                        <p>final part of old revision</p>
-                        <audio preload="none" controls src="music/waveform/the 3.flac"></audio>
                         <p>isolated sidechained break</p>
                         <audio preload="none" controls src="music/waveform/the amens breaks.flac"></audio>
+                        <p>older revision</p>
+                        <audio preload="none" controls src="music/waveform/forget.flac"></audio>
+                        <p>final part of old revision</p>
+                        <audio preload="none" controls src="music/waveform/the 3.flac"></audio>
                     </div>
                 </div>
             </div>

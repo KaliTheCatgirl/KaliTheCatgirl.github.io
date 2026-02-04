@@ -91,6 +91,10 @@ audio {
     flex-direction: row;
 }
 
+.proud {
+    color: green;
+}
+
 .gay {
     text-shadow:
         calc(1em  * var(--gaysep))  calc(1em  * var(--gaysep)) 0px #f00,
