@@ -2,19 +2,16 @@
 <html lang="en">
 
 <!--
-    what're you doing here? peeking at the awfulness, i see
-    you probably arent gonna find anything useful here unfortunately
+    what're you doing here? peeking at the awfulness, i see.
+    you probably arent gonna find anything useful here unfortunately.
+    i dont know what the hell im doing, this website is so terribly written.
+    rust is such a nicer and saner experience than dealing with frontend.
 
-    all original work made by Kali the Catgirl
-    code licensed under MIT
-    audiovisual and literary content licensed under CC-BY
+    all original work made by Kali the Catgirl.
+    code licensed under GPLv3.
+    audiovisual and literary content licensed under CC BY-SA.
     use my stuff however you want, just credit me :P
-    no machine learning was used in the production of any music or website content
--->
-
-<!--
-    TODO:
-    - LESS DIV SOUP!!!!
+    no machine learning was used in the production of any content.
 -->
 
 <head>
@@ -24,7 +21,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="column" style="padding: 1rem" onpageshow="{
+<body class="centered column" style="padding: 1rem" onpageshow="{
     const quotes = [
         'AV2 IS OUT!!!',
         'why do they call it const when you co nst the members of out mutable reassign the members?',
@@ -41,7 +38,7 @@
     }
     randomise_quote();
 }">
-    <header class="centered column">
+    <header>
         <div style="display: flex; align-items: center;">
             <svg viewBox="-1 0 12 10" style="width: 100px">
                 <line id="logo-k-upright" x1="11" x2="5" y1="-1" y2="5" stroke="#628" stroke-width="1"></line>
@@ -67,302 +64,27 @@
         </div>
         <p>created by an unfathomably silly systems language girlie</p>
         <p id="random_quote">&#x2684;</p>
-        <nav style="font-size: 2rem;">
-            <h1 style="margin: 0">places</h1>
+        <nav>
+            <h1 class="big" style="margin: 0">places</h1>
             <!-- <a class="boxed" href="#stuff">stuff</a> -->
-            <a class="boxed" href="#noises">music</a>
-            <a class="boxed" href="#sillies">gallery</a>
-            <!-- <a class="boxed" href="videos.html">videos</a> -->
-            <h1 style="margin: 0">socials</h1>
-            <a href="https://youtube.com/@KaliTheCatgirl">youtube</a>
-            <a href="https://github.com/KaliTheCatgirl">github</a>
-            <br>discord @cerulity32k
-            <br><span class="evil">not usually active:</span>
-            <br>stoat: KaliTheCatgirl#2094
-            <br>matrix: @kalithecatgirl:matrix.org
+            <a style="font-size: 2rem;" href="projects.html">projects</a>
+            <br><span style="font-size: 1rem;">my projects, both wip and completed. no links yet though</span>
+            <br><a style="font-size: 2rem;" href="music.html">music</a>
+            <br><span style="font-size: 1rem;">my music i made, small preview :P</span>
+            <br><audio style="width: 20em" preload="none" controls loop src="https://r2.kalithecatgirl.ca/music/bb/x86_fma.flac"></audio>
+            <br><a style="font-size: 2rem;" href="gallery.html">gallery</a>
+            <br><span style="font-size: 1rem;">collection of random images i found</span>
+            <!-- <br><a style="font-size: 2rem;" href="glory.html">glory remix explanation</a> -->
+            <!-- <br><span style="font-size: 1rem;">explanation of my ultrakill glory remix i made with all bytebeat</span> -->
+            <!-- above is a work in progress!! :3 -->
+            <h1 class="big" style="margin: 0">socials</h1>
+            <a style="font-size: 2rem;" href="https://youtube.com/@KaliTheCatgirl">youtube</a>
+            <br><a style="font-size: 2rem;" href="https://github.com/KaliTheCatgirl">github</a>
+            <br><a style="font-size: 2rem;" href="https://codeberg.org/KaliTheCatgirl">codeberg</a>
+            <br><a style="font-size: 2rem;" href="https://git.gay/KaliTheCatgirl">git.gay</a>
+            <br><span style="font-size: 2rem;">discord: @cerulity32k</span>
         </nav>
     </header>
-    <main>
-        <!-- <section id="stuff" class="centered">
-            <h1 class="big gay">stuff</h1>
-            <p>i uh</p>
-            <p>i make a lot of software</p>
-            <p>dont really finish much though :P</p>
-            <h1 class="gay">TECTA</h1>
-            systems language that experiments with a ton of things and stuff
-        </section> -->
-        <section id="noises">
-            <h1 class="big centered gay">noises <img src="https://r2.kalithecatgirl.ca/graphics/avif/dj-khaled-dance.avif" style="height: 2em; translate: 0 1em;"></h1>
-            <p class="centered">my music</p>
-            <p class="proud centered">green = songs im most proud of</p>
-            <div class="row">
-                <div class="bordered music-section">
-                    <h2 class="medium gay">
-                        inserter series
-                    </h2>
-                    <p>inspired by factorio</p>
-                    <div class="song">
-                        <h4 class="song-title"><code>Burner Inserter</code></h4>
-                        <p>this one was made in lmms lmao</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/insert/burner.flac"></audio>
-                    </div>
-                    <div class="song">
-                        <h4 class="song-title"><code>Stack Inserter (2A03 + Amiga)</code></h4>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/insert/stack.flac"></audio>
-                    </div>
-                    <div class="song">
-                        <h4 class="proud song-title"><code>Inserter (2x SID2)</code></h4>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/insert/inserter.flac"></audio>
-                    </div>
-                    <div class="song">
-                        <h4 class="song-title"><code>Fast Inserter (SNES)</code></h4>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/insert/fast.flac"></audio>
-                    </div>
-                </div>
-
-                <div class="bordered music-section">
-                    <h2 class="medium gay">
-                        bytebeat sampling
-                    </h2>
-                    <p>turning noise into more noise</p>
-                    <div class="song">
-                        <h4 class="song-title">INSERTION ASSERTION</h4>
-                        <p>title comes from the fact that motifs from the inserter series are included</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/bb/assert.flac"></audio>
-                    </div>
-                    <div class="song">
-                        <h4 class="proud song-title">X86C0R14T3R</h4>
-                        <p>title is a mutilated version of x86 + excoriate</p>
-                        <p style="font-family: monospace; font-size: 1rem;"><code>SSE</code> arrangement</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/bb/x86_xmm.flac"></audio>
-                        <p style="font-family: monospace; font-size: 1rem;"><code>FMA</code> arrangement</p>
-                        <audio preload="none" controls loop src="https://r2.kalithecatgirl.ca/music/bb/x86_fma.flac"></audio>
-                    </div>
-                </div>
-
-                <div class="bordered music-section">
-                    <h2 class="medium gay">
-                        misc. (waveform/vital)
-                    </h2>
-                    <p>superslop is my favourite instrument</p>
-                    <div class="song">
-                        <h4 class="proud song-title">core::mem::forget</h4>
-                        <p>alive, forgotten. conscious, forbidden to interact.</p>
-                        <p>partially inspired by mindustry</p>
-                        <p>
-                            this one ive had the idea for for a long time (especially the pings),
-                            but i never really got around to implementing it until very recently.
-                            it wasnt until i was shattering an amen break in strudel that i realised i could turn it into an actual song
-                        </p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/waveform/forget 2.1.flac"></audio>
-                        <p>final part (really like listening to it isolated)</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/waveform/forever 2.1.flac"></audio>
-                        <p>isolated sidechained break</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/waveform/the amens breaks.flac"></audio>
-                        <p>older revision</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/waveform/forget.flac"></audio>
-                        <p>final part of old revision</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/waveform/the 3.flac"></audio>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="bordered music-section">
-                    <h2 class="medium gay">
-                        misc. (furnace)
-                    </h2>
-                    <p>mostly remixes, like all chiptuners tend to</p>
-                    <div class="song">
-                        <h4 class="song-title">Vito Biliti - Spin Land (2A03 Cover) [Super Stickman Golf 3]</h4>
-                        <p>ssg3 anyone?</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/furnace/spin land.flac"></audio>
-                    </div>
-                    <div class="song">
-                        <h4 class="song-title">Douglas Holmquist - Checkpoint 11 (PC + ES1488 Cover) [Smash Hit]</h4>
-                        <p>smash hit was such a peak mobile game</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/furnace/smcp11.flac"></audio>
-                    </div>
-                    <div class="song">
-                        <h4 class="song-title">Matthew E. Harwood - PDA 1 (SID3 Cover) [Battleblock Theater/Alien Hominid]</h4>
-                        <p>heard this one in battleblock theater</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/furnace/pda r2.flac"></audio>
-                    </div>
-                    <div class="song">
-                        <h4 class="song-title">Kenta Nagata, Satomi Terui - Neo Bowser City (PC + ES1488 Cover) [Mario Kart 7]</h4>
-                        <p>nintendo pretty please dont kill me with knives and hammers</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/furnace/nbc.flac"></audio>
-                    </div>
-                    <div>
-                        <h4 class="song-title">Kali the Catgirl - Buffer Overrun (ES5506 + ES1488 Cover)</h4>
-                        <p>yes i did make a cover of my own song, and theres nothing you can do about it :3</p>
-                        <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/furnace/buffer overrun.flac"></audio>
-                    </div>
-                </div>
-
-                <div class="bordered music-section" style="flex: 2">
-                    <h2 class="medium gay">
-                        evil lmms concoctions
-                    </h2>
-                    <p>INCREDIBLE slop next 5km</p>
-                    <p>these are very old, ive completely abandoned lmms for waveform and furnace at this point</p>
-                    <p class="evil">some of these are pretty loud so be warned of that, <strong>loud ones are red</strong></p>
-
-                    <div class="row">
-                        <div class="music-section">
-                            <h3 class="gay">fakebit remixes i used to call chiptune</h3>
-                            <p>
-                                &gt; "chiptune remix"<br>
-                                &gt; look inside<br>
-                                &gt; tripleoscillator
-                            </p>
-                            <p>i have SO MANY OF THESE, these are ones i actually kinda like</p>
-                            <div class="song">
-                                <h4 class="song-title">Murugan Thiruchelvam - Kitchen [I Am Bread]</h4>
-                                <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/evil/fakebit/i am bread kitchen chiptune.flac"></audio>
-                            </div>
-                            <div class="song">
-                                <h4 class="evil song-title">Tanger - BIKE</h4>
-                                <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/evil/fakebit/bike chip revise add porta.flac"></audio>
-                            </div>
-                            <div class="song">
-                                <h4 class="song-title">vowl & sace - 2000</h4>
-                                <p>this one was made because i really liked the song, but wanted to change its structure</p>
-                                <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/evil/fakebit/2000 chip.flac"></audio>
-                            </div>
-                        </div>
-
-                        <div class="music-section">
-                            <h3 class="gay">other remixes</h3>
-                            <p>literally just loud = good mostly</p>
-                            <div class="song">
-                                <h4 class="evil song-title">Zalza - Cherish</h4>
-                                <p>i de-phonked the phonk remix of this one and made it into something kinda decent i think?</p>
-                                <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/evil/other remixes/cherish penis remix.flac"></audio>
-                            </div>
-                            <div class="song">
-                                <h4 class="evil song-title">Shirobon - Granite</h4>
-                                <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/evil/other remixes/feldspar.flac"></audio>
-                            </div>
-                            <div class="song">
-                                <h4 class="song-title">Bee Hunter - Apoplexy (Noteblock Remix)</h4>
-                                <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/evil/other remixes/apoplexy noteblocks.flac"></audio>
-                            </div>
-
-                            <h3 class="gay">unfinished originals</h3>
-                            <p>might continue later idk</p>
-                            <div class="song">
-                                <h4 class="evil song-title">C18H24O2</h4>
-                                <p>made after seeing bishu's hit 'em video, i wanted to make what i think was a more faithful interpretation of hit 'em's description</p>
-                                <p>ty dream girl</p>
-                                <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/evil/originals/c18h24o2.flac"></audio>
-                            </div>
-                            <div class="song">
-                                <h4 class="song-title">Misinformation Break</h4>
-                                <p>the "how it feels to spread misinformation" meme got to me and now i some day want to make a song about it that's utterly joyous</p>
-                                <audio preload="none" controls src="https://r2.kalithecatgirl.ca/music/evil/originals/misinformation break.flac"></audio>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sillies">
-            <h1 class="big centered gay">sillies</h1>
-            <p class="centered">welcome to my louvre</p>
-            <div style="display: flex; flex-wrap: wrap">
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/gif (bad)/bptpbtpbtbptpbt.gif">
-                    <div>me to the people that made vulkan (ty for the peak)</div>
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/gif (bad)/does this.gif">
-                    <div>:3</div>
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/dry out geomety dash.avif">
-                    <div>accurate depiction of my canadian fuckass after it snows</div>
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/scare y.avif" style="background-color: black;">
-                    <div>shat myself after seeing this</div>
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/im in shark.avif">
-                    <div>im in shark</div>
-                </span>
-                <span class="image-container" style="--w: 2in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/javascrapt.avif">
-                    <div>whenever i have to use anything but a systems language to make something</div>
-                </span>
-                <span class="image-container" style="--w: 4in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/opus my goat.png" style="background-color: black">
-                    FUCK YES SMOKE EM OPUS MY GOAT
-                </span>
-                <!-- <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/kibbycam.avif" style="background-color: black">
-                    <div>for some reason the completely black pixels in this gif are transparent which is perplexing beyond belief</div>
-                </span> -->
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/av2 is in a week.avif">
-                    <div>Can you believe it guys? AV2, just a week away. AV2 is in a week! (2025-12-17)</div>
-                </span>
-                <span class="image-container" style="--w: 2in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/penis.avif" style="background-color: black">
-                    <div>zmuhiouhokgfxhuolxfkokmqwonyngiybweygugfdoyimdfcbohijgovvgblblpiblhcggncdxngcdgeewiiyugwicixcgyivvfqxdxqtfwwrtdeeyqpupyiopbvgxvcxfvbvxxmfdjjgfgdssgfdyowoyqtepetrpuihgpbvnciuohcvbnreegfhwfewerfcrwentcn</div>
-                </span>
-                <span class="image-container" style="--w: 5in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/bgug.avif">
-                    <div>gug</div>
-                </span>
-                <span class="image-container" style="--w: 4in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/yeah.avif" style="background-color: black">
-                    <div>when i the me i when and me</div>
-                </span>
-                <span class="image-container" style="--w: 4in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/anything but that.avif" style="background-color: black">
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <div>What a conundrum! A need has arisen for a semantically represented textual paragraph! How ever will I satiate this specification?</div>
-                    <div>Hyper Text Markup Language:</div>
-                    <img class="convenient" src="https://r2.kalithecatgirl.ca/graphics/avif/convenient p.avif" style="background-color: black">
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/girlkisser.avif" style="background-color: black">
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/eated cable.avif" style="background-color: black">
-                    <div>me when i see a fiber optic cable &lt;3</div>
-                </span>
-                <span class="image-container" style="--w: 2in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/owo bug.avif" style="background-color: black">
-                    owo
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/yuri-yuri-expert.avif" style="background-color: black">
-                    <div>what about my e?</div>
-                </span>
-                <span class="image-container" style="--w: 2in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/fast-missile-cat.avif" style="background-color: black">
-                    t
-                </span>
-                <span class="image-container" style="--w: 4in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/bunny-too-cute.avif" style="background-color: black">
-                </span>
-                <span class="image-container" style="--w: 3in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/noelle-deltarune-deltarune.avif" style="background-color: black">
-                    my runes be delting
-                </span>
-                <span class="image-container" style="--w: 4in">
-                    <img loading="lazy" src="https://r2.kalithecatgirl.ca/graphics/avif/mario-drooling-emoji.avif" style="background-color: black">
-                    guh
-                </span>
-            </div>
-        </section>
-
-        <section></section>
-    </main>
 </body>
 
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali the Catgirl's Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="centered column" style="display: flex; width: 100%; align-items: center;">
+        <h1 class="big gay">Completed</h1>
+        <div class="row">
+            <div class="bordered project-section">
+                <h1 class="medium gay">RoutAIr</h1>
+                A packet analyser created in 6 hours for a hackathon, using an LLM to analyse network packets.
+                Won third place out of fourteen, the judges highlighting its backend, the component I contributed.
+                <br>Frontend written in HTML, CSS, and JS, with the backend written in Rust, utilising Tokio, libpcap, and the OpenAI API.
+                <p style="color: blue">for this one we didnt even really try with the ai component,
+                we kinda just spewed out an application in 6 hours and it ended up being decent
+                (didnt use ai in its development either)</p>
+            </div>
+            <div class="bordered project-section">
+                <h1 class="medium gay">Scouting2200</h1>
+                A Flutter-based application used to track FRC match data, with composable and declarative controls.
+                <p style="color: blue">we had to find a way to get around the requirement of having no wireless communication during matches,
+                which we did by getting a barcode scanner off amazon and using qr codes to transfer the data to a google spreadsheet.
+                we used tab separated values which worked with the google sheet ui surprisingly well</p>
+            </div>
+            <div class="bordered project-section">
+                <h1 class="medium gay">RV32I Emulator</h1>
+                A simple emulator for the 32-bit RISC-V base integer instruction set.
+                Implements MMIO through traits and interaction through environment calls.
+                <p style="color: blue">riscv is such a well designed architecture. flagless, modular, simple,
+                and honestly kinda simple to program in raw. this emulator doesnt jit but it does use interfaces for memory
+                which means mmio is really easy to add</p>
+            </div>
+        </div>
+        <h1 class="big gay">In-progress</h1>
+        <div class="row">
+            <div class="bordered project-section">
+                <h1 class="medium gay">TECTA</h1>
+                A partially functional, affinely-typed, exceptionless programming language that requires no runtime,
+                panics minimally, enables substantial compile-time reflection, and makes types and identity malleable.
+                <p style="color: blue">tecta is kinda just me taking everything i like about a bunch of different programming languages
+                and making a whole different language out of it. the identity system i dont really know how to exploit well,
+                its more of a generalisation of more specific features of other languages (like traits and non-structural types)</p>
+            </div>
+            <div class="bordered project-section">
+                <h1 class="medium gay">Catmium</h1>
+                A statically and strongly typed language that has the goal of fast iteration speed for debug mode, and fast execution speed in release mode.
+                <p style="color: blue">depending on how tecta goes the concept of catmium might be merged but im not really sure</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
